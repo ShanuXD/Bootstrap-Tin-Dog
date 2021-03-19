@@ -4,35 +4,16 @@
 body{
     font-family: 'Montserrat',sans-serif;
     overflow-x: hidden;
+    text-align: center;
 }
 
-#title{
-    background-color:#ff4c68;
-    color: #fff;
-    position: relative;
-
-    @media (max-width: 1028px) {
-text-align: center;
-    }
-    
-}
-
-.container-fluid{
-    padding: 3% 15% 7%;
-
-}
-
-h1{
-    font-family: 'Montserrat-Black', sans-serif;
+h1,h2,h3{
+    font-family: 'Montserrat-Bold', sans-serif;
     font-weight: 900;
-    font-size: 3.5rem;
-    line-height: 1.5;
 }
 
 h2{
-    font-family: 'Montserrat', sans-serif;
-    font-weight: bold;
-    font-style: 1.5rem;
+    font-style: 3rem;
     line-height: 1.5;
 }
 
@@ -42,6 +23,27 @@ h3{
 
 p{
     color: grey;
+}
+.big-heading{
+    font-size: 3.5rem;
+    line-height: 1.5;
+}
+
+#title{
+    background-color:#ff4c68;
+    color: #fff;
+    position: relative;
+    text-align: left;
+
+    @media (max-width: 1028px) {
+        text-align: center;
+    }
+    
+}
+
+.container-fluid{
+    padding: 3% 15% 7%;
+
 }
 
 .navbar{
@@ -63,6 +65,7 @@ p{
 .nav-link{
     font-size: 1.2rem;
     font-family: 'Montserrat-Light', sans-serif;
+    text-transform: uppercase;
 }
 
 .download-btn{
@@ -89,8 +92,7 @@ p{
     position: relative;
 }
 .feature-box{
-    // background-color: #eee;
-    text-align: center;
+    
     padding: 2%;
     
     i{
@@ -107,7 +109,6 @@ p{
 
 #testimonials{
     padding-top: 7%;
-    text-align: center;
     background-color: #ef8172;
     color: #fff;
 
@@ -125,7 +126,6 @@ p{
 
 #press{
     background-color: #ef8172;
-    text-align: center;
     padding-bottom: 3%;
     img{
         width: 15%;
@@ -134,9 +134,31 @@ p{
 }
 #pricing{
     padding: 10rem;
-    text-align: center;
+
+    h2{
+        font-size: 3rem;
+        line-height: 1.5;
+    }
 
     .pricing__coloum{
         padding: 3% 2%;
     }
+}
+
+.card{
+    height: 100%;
+}
+
+#cta{
+    background-color: #ff4c68;
+    color: #fff;
+    padding: 7% 15%;
+}
+
+#footer{
+    padding: 7% 15%;
+}
+
+.footer-icon{
+    margin: 1rem 1.5rem;
 }
